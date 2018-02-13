@@ -1,11 +1,15 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {DashboardComponent} from './dashboard/dashboard.component';
+import {ForgotPasswordComponent} from './auth/forgot-password/forgot-password.component';
+import {LoginComponent} from './auth/login/login.component';
+import {RegisterComponent} from './auth/register/register.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'auth', loadChildren: './auth/auth.module#AuthModule'}
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
+  {path: 'forgotpassord', component: ForgotPasswordComponent},
+  {path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'}
 ];
 
 @NgModule({

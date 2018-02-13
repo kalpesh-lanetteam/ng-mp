@@ -5,6 +5,7 @@ import {RegisterComponent} from './register/register.component';
 import {ForgotPasswordComponent} from './forgot-password/forgot-password.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'login'},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'forgotpassord', component: ForgotPasswordComponent}

@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('mp-ui App', () => {
+describe('ng-mp App', () => {
   let page: AppPage;
 
   beforeEach(() => {
